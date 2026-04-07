@@ -10,7 +10,7 @@ export default function TodoList() {
     let savedTodos = localStorage.getItem("todos");
     return savedTodos
       ? JSON.parse(savedTodos)
-      : [{ task: "Sample task", id: uuidv4(), isDone: false }];
+      : [];
   });
 
   let [newTodo, setNewTodo] = useState("");
@@ -79,19 +79,24 @@ export default function TodoList() {
 
       <hr />
 
-      <div className="todo-list">
-        <ul>
-          {todos.map((todo) => (
-            <TodoItem
-              key={todo.id}
-              todo={todo}
-              deleteTodo={deleteTodo}
-              markAsDoneOne={markAsDoneOne}
-            />
-          ))}
-        </ul>
-      </div>
-
+      {todos.length === 0 ? (
+        <p className="empty-msg">
+          No tasks yet 📋 <br /> Start adding tasks
+        </p>
+      ) : (
+        <div className="todo-list">
+          <ul>
+            {todos.map((todo) => (
+              <TodoItem
+                key={todo.id}
+                todo={todo}
+                deleteTodo={deleteTodo}
+                markAsDoneOne={markAsDoneOne}
+              />
+            ))}
+          </ul>
+        </div>
+      )}
       <button onClick={markAsOneAll} className="mark-all-btn">
         Mark As Done All
       </button>

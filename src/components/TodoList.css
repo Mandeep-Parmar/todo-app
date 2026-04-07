@@ -71,3 +71,11 @@ hr {
 .todo-list::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.6);
 }
+
+.empty-msg {
+  text-align: center;
+  padding: 20px;
+  color: #ddd;
+  font-size: 14px;
+  opacity: 0.8;
+}
