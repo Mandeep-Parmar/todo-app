@@ -1,16 +1,87 @@
-# React + Vite
+# 📝 Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive Todo List application built using React. This app helps users efficiently manage daily tasks with a clean UI, smooth interactions, and persistent storage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+##  Live Demo
 
-## React Compiler
+🔗 https://todo-app-henna-phi-35.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+##  Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* ➕ Add new tasks
+* 🗑️ Delete tasks
+* ✅ Mark tasks as completed
+* 💾 Persistent data using LocalStorage
+* 📱 Fully responsive design
+* 🎨 Modern glassmorphism UI
+* 🔄 Smooth hover and interaction effects
+* 🧠 Handles long text without UI break
+
+---
+
+##  Tech Stack
+
+* React (useState, useEffect)
+* JavaScript (ES6+)
+* CSS (Flexbox, Responsive Design)
+* Vite
+* 
+---
+
+##  Project Structure
+
+```bash
+todo-app/
+│
+├── public/
+│   └── image/
+│       └── bg-1.jpg
+│
+├── src/
+│   ├── components/
+│   │   ├── TodoInput.jsx
+│   │   ├── TodoInput.css
+│   │   ├── TodoItem.jsx
+│   │   ├── TodoItem.css
+│   │   ├── TodoList.jsx
+│   │   └── TodoList.css
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── README.md
+└── vite.config.js
+```
+
+
+---
+
+##  What I Learned
+
+* Component-based architecture in React
+* State management using useState
+* Handling side effects using useEffect
+* Implementing LocalStorage for persistence
+* Fixing real-world UI bugs (text overflow, flex issues)
+* Building responsive and modern UI
+
+---
+
+##  Author
+
+**Mandeep Parmar**
+
+* GitHub: https://github.com/Mandeep-Parmar
+* LinkedIn: https://www.linkedin.com/in/mandeep-p-b44930327/
+
+---
