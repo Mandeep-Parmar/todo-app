@@ -1,0 +1,35 @@
+.input-container {
+  display: flex;
+  background: rgba(255,255,255,0.15);
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.input-container input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8px;
+}
+
+.input-container input::placeholder {
+  color: #ddd;
+  opacity: 0.7;
+}
+
+.input-container button {
+  border-radius: 10px;
+  background: #8e5093;
+  color: white;
+  border: none;
+  font-weight: 500;
+  opacity: 0.8;
+  padding: 8px 14px;
+}
+
+.input-container button:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}

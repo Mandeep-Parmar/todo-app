@@ -1,0 +1,73 @@
+.todo-container {
+  width: 100%;           /* Full width on mobile */
+  max-width: 400px;      /* Maximum width on desktop */
+  margin: 20px auto;     /* Center it horizontally */
+  padding: 25px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(11px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  color: white;
+  transition: 0.3s;
+}
+
+.todo-container:hover {
+  transform: translateY(-5px);
+}
+
+.todo-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.mark-all-btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #8e5093;
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.mark-all-btn:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+  margin: 10px 0;
+}
+
+.todo-list {
+  max-height: 200px;   /* control height */
+  overflow-y: auto;
+  padding-right: 5px;  /* space for scrollbar */
+}
+
+.todo-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.todo-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.todo-list::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.6);
+}

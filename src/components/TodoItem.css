@@ -1,0 +1,60 @@
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 12px 6px 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: #8e5093;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.todo-item:hover {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+.todo-text {
+  flex: 1;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.todo-actions button {
+  width: 28px;
+  height: 28px;
+
+  /* icon center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #e60000;   /* darker red */
+  transform: scale(1.1);
+}
+
+.done-btn {
+  background: #4dabf7;
+  color: white;
+}
+
+.done-btn:hover {
+  background: #1c7ed6;   /* darker blue */
+  transform: scale(1.1);
+}
