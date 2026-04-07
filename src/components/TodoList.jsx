@@ -21,6 +21,8 @@ export default function TodoList() {
   }, [todos]);
 
   let addNewTask = () => {
+    if (newTodo.trim() === "") return;
+    
     setTodos((prevTodos) => {
       return [...prevTodos, { task: newTodo, id: uuidv4(), isDone: false }];
     });
