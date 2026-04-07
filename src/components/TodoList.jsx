@@ -1,14 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import TodoInput from "./TodoInput";
 import TodoItem from "./TodoItem";
 import "./TodoList.css";
 
 export default function TodoList() {
-  let [todos, setTodos] = useState([
-    { task: "Sample task", id: uuidv4(), isDone: false },
-  ]);
+  let [todos, setTodos] = useState(() => {
+    // get data from local storage
+    let savedTodos = localStorage.getItem("todos");
+    return savedTodos
+      ? JSON.parse(savedTodos)
+      : [{ task: "Sample task", id: uuidv4(), isDone: false }];
+  });
+
   let [newTodo, setNewTodo] = useState("");
+
+  useEffect(() => {
+    // add data to local storage
+    localStorage.setItem("todos", JSON.stringify(todos));
+  }, [todos]);
 
   let addNewTask = () => {
     setTodos((prevTodos) => {
