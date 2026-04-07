@@ -5,7 +5,7 @@ import { FaCheck } from "react-icons/fa";
 export default function TodoItem({ todo, deleteTodo, markAsDoneOne }) {
   return (
     <li className="todo-item">
-      <span style={todo.isDone ? { textDecorationLine: "line-through" } : {}}>
+      <span style={todo.isDone ? { textDecorationLine: "line-through" } : {}} className="todo-text">
         {todo.task}
       </span>
 

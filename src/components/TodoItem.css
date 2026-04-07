@@ -8,6 +8,7 @@
   background: #8e5093;
   opacity: 0.8;
   transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .todo-item:hover {
@@ -42,6 +43,7 @@
 .delete-btn {
   background: #ff4d4d;
   color: white;
+  margin-left: 10px;
 }
 
 .delete-btn:hover {
@@ -57,4 +59,11 @@
 .done-btn:hover {
   background: #1c7ed6;   /* darker blue */
   transform: scale(1.1);
+}
+
+.todo-text {
+  flex: 1;
+  /* To allow flex items to shrink and prevent overflow when handling long content. */
+  min-width: 0;
+  word-wrap: break-word;     /* break long words */
 }
