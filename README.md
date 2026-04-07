@@ -29,7 +29,7 @@ A modern and responsive Todo List application built using React. This app helps 
 * JavaScript (ES6+)
 * CSS (Flexbox, Responsive Design)
 * Vite
-* 
+
 ---
 
 ##  Project Structure
